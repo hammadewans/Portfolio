@@ -172,27 +172,283 @@
       </div></div>
     </section><!-- /Resume Section -->
 
+```html
 <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>A showcase of the areas I work in. Real project screenshots can be added to these cards as your portfolio grows.</p>
-      </div>
-      <div class="container"><div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100"><li data-filter="*" class="filter-active">All</li><li data-filter=".filter-design">Graphic Design</li><li data-filter=".filter-web">Web Development</li></ul>
-        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design"><img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="Graphic design showcase"><div class="portfolio-info"><h4>Flex &amp; Banner Design</h4><p>Print-ready promotional graphics</p><a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Flex & Banner Design" data-gallery="portfolio-gallery-design" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></div></div>
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design"><img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="Business card design showcase"><div class="portfolio-info"><h4>Business Card Design</h4><p>Professional print layouts</p><a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Business Card Design" data-gallery="portfolio-gallery-design" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></div></div>
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design"><img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="Branding design showcase"><div class="portfolio-info"><h4>Branding &amp; Promotional Design</h4><p>Basic logo and marketing material concepts</p><a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding & Promotional Design" data-gallery="portfolio-gallery-design" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></div></div>
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"><img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="Frontend development showcase"><div class="portfolio-info"><h4>Frontend Web Development</h4><p>HTML, CSS and JavaScript interfaces</p><a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="Frontend Web Development" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></div></div>
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"><img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="Web application showcase"><div class="portfolio-info"><h4>Web Application Development</h4><p>Responsive application interfaces</p><a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Web Application Development" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></div></div>
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"><img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="API development showcase"><div class="portfolio-info"><h4>REST API Development</h4><p>Backend endpoints and integrations</p><a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="REST API Development" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></div></div>
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"><img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="Database integration showcase"><div class="portfolio-info"><h4>Database Integration</h4><p>MySQL and PostgreSQL based applications</p><a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="Database Integration" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></div></div>
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"><img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="Deployment technology showcase"><div class="portfolio-info"><h4>Docker &amp; Nginx Deployment</h4><p>Application environment and deployment knowledge</p><a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Docker & Nginx Deployment" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></div></div>
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"><img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="Full-stack project showcase"><div class="portfolio-info"><h4>Full-Stack Web Project</h4><p>Frontend, backend, API and database integration</p><a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Full-Stack Web Project" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></div></div>
+<section id="portfolio" class="portfolio section">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>
+      A showcase of my work across graphic design, branding,
+      web development, and software engineering.
+    </p>
+  </div>
+
+  <div class="container">
+
+    <div class="isotope-layout"
+         data-default-filter="*"
+         data-layout="masonry"
+         data-sort="original-order">
+
+      <!-- Portfolio Filters -->
+      <ul class="portfolio-filters isotope-filters"
+          data-aos="fade-up"
+          data-aos-delay="100">
+
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-design">Graphic Design</li>
+        <li data-filter=".filter-web">Web Development</li>
+
+      </ul>
+
+      <!-- Portfolio Items -->
+      <div class="row gy-4 isotope-container"
+           data-aos="fade-up"
+           data-aos-delay="200">
+
+
+        <!-- ============================= -->
+        <!-- GRAPHIC DESIGN -->
+        <!-- ============================= -->
+
+        <!-- 01 — Poster Design -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+
+          <img
+            src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=85"
+            class="img-fluid"
+            alt="Graphic Design and Creative Poster">
+
+          <div class="portfolio-info">
+            <h4>Creative Poster Design</h4>
+            <p>Modern layouts for promotional and digital campaigns</p>
+
+            <a
+              href="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1800&q=90"
+              title="Creative Poster Design"
+              data-gallery="portfolio-gallery-design"
+              class="glightbox preview-link">
+
+              <i class="bi bi-zoom-in"></i>
+            </a>
+          </div>
+
         </div>
-      </div></div>
-    </section><!-- /Portfolio Section -->
+
+
+        <!-- 02 — Branding -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+
+          <img
+            src="https://images.unsplash.com/photo-1634942537034-2531766767d1?auto=format&fit=crop&w=1200&q=85"
+            class="img-fluid"
+            alt="Brand Identity and Logo Design">
+
+          <div class="portfolio-info">
+            <h4>Brand Identity</h4>
+            <p>Logo systems and visual identities for modern brands</p>
+
+            <a
+              href="https://images.unsplash.com/photo-1634942537034-2531766767d1?auto=format&fit=crop&w=1800&q=90"
+              title="Brand Identity"
+              data-gallery="portfolio-gallery-design"
+              class="glightbox preview-link">
+
+              <i class="bi bi-zoom-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- 03 — Marketing -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+
+          <img
+            src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=85"
+            class="img-fluid"
+            alt="Marketing and Promotional Design">
+
+          <div class="portfolio-info">
+            <h4>Marketing Creatives</h4>
+            <p>Social media graphics and promotional visual content</p>
+
+            <a
+              href="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1800&q=90"
+              title="Marketing Creatives"
+              data-gallery="portfolio-gallery-design"
+              class="glightbox preview-link">
+
+              <i class="bi bi-zoom-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- WEB DEVELOPMENT -->
+        <!-- ============================= -->
+
+        <!-- 04 — Frontend -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85"
+            class="img-fluid"
+            alt="Frontend Web Development">
+
+          <div class="portfolio-info">
+            <h4>Frontend Development</h4>
+            <p>Responsive websites built with HTML, CSS and JavaScript</p>
+
+            <a
+              href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1800&q=90"
+              title="Frontend Development"
+              data-gallery="portfolio-gallery-web"
+              class="glightbox preview-link">
+
+              <i class="bi bi-zoom-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- 05 — Web Application -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+          <img
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=85"
+            class="img-fluid"
+            alt="Web Application Development">
+
+          <div class="portfolio-info">
+            <h4>Web Application</h4>
+            <p>Interactive and responsive applications for the modern web</p>
+
+            <a
+              href="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1800&q=90"
+              title="Web Application"
+              data-gallery="portfolio-gallery-web"
+              class="glightbox preview-link">
+
+              <i class="bi bi-zoom-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- 06 — API -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+          <img
+            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85"
+            class="img-fluid"
+            alt="Backend API and Server Development">
+
+          <div class="portfolio-info">
+            <h4>REST API Development</h4>
+            <p>Backend services, API integrations and data communication</p>
+
+            <a
+              href="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1800&q=90"
+              title="REST API Development"
+              data-gallery="portfolio-gallery-web"
+              class="glightbox preview-link">
+
+              <i class="bi bi-zoom-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- 07 — Database -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+          <img
+            src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=1200&q=85"
+            class="img-fluid"
+            alt="Database and Data Management">
+
+          <div class="portfolio-info">
+            <h4>Database Integration</h4>
+            <p>Structured data systems using MySQL and PostgreSQL</p>
+
+            <a
+              href="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=1800&q=90"
+              title="Database Integration"
+              data-gallery="portfolio-gallery-web"
+              class="glightbox preview-link">
+
+              <i class="bi bi-zoom-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- 08 — Deployment -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+          <img
+            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+            class="img-fluid"
+            alt="Cloud Deployment and Infrastructure">
+
+          <div class="portfolio-info">
+            <h4>Deployment &amp; Infrastructure</h4>
+            <p>Containerized applications and production deployment</p>
+
+            <a
+              href="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=90"
+              title="Deployment & Infrastructure"
+              data-gallery="portfolio-gallery-web"
+              class="glightbox preview-link">
+
+              <i class="bi bi-zoom-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- 09 — Full Stack -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=85"
+            class="img-fluid"
+            alt="Full Stack Web Development">
+
+          <div class="portfolio-info">
+            <h4>Full-Stack Development</h4>
+            <p>Complete web solutions from frontend to backend and database</p>
+
+            <a
+              href="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1800&q=90"
+              title="Full-Stack Development"
+              data-gallery="portfolio-gallery-web"
+              class="glightbox preview-link">
+
+              <i class="bi bi-zoom-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- /Portfolio Section -->
+```
+
 
 <!-- Services Section -->
     <section id="services" class="services section">
